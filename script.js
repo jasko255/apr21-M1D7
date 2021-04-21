@@ -65,17 +65,18 @@
 
       const addParagraph = function (content) {
         let newP = document.createElement('p')
-        newP.innerHTML = 'new P'
+        newP.innerHTML = content
         let parent = document.querySelectorAll('div')
         parent[0].appendChild(newP)
       };
-      addParagraph()
+      addParagraph('')
 
       /* EXERCISE 7
       Write a function for making the first UL disappear.
       */
 
       const firstUlDisappear = function () {
+        
         let x = document.getElementById("firstList");
         if (x.style.display === "none") {
           x.style.display = "block";
